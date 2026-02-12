@@ -79,7 +79,9 @@ export function IconCloud() {
                                 }}
                              />
                         </div>
-                        <span className="text-[10px] text-neutral-600 font-mono uppercase tracking-wider group-hover:text-neutral-400">{slug}</span>
+                        <span className="text-[10px] text-neutral-600 font-mono uppercase tracking-wider group-hover:text-neutral-400">
+                          {slug === "nodedotjs" ? "node js" : slug === "nextdotjs" ? "next js" : slug}
+                        </span>
                     </div>
                 ))}
              </div>
