@@ -1,0 +1,178 @@
+{
+  "personal_info": {
+    "name": "AHMED BEN YAHIA",
+    "contact": {
+      "email": "ahmedbenyahia654@gmail.com",
+      "linkedin": "linkedin.com/in/ahmedbenyahia",
+      "website": "ahmed-benyahia.vercel.app",
+      "phone": "+216 50 193 344",
+      "location": "Sfax, Tunisia"
+    },
+    "resume": "/ahmedbenyahia-automation and full stakc-2026.pdf",
+    "titles": [
+      "AI & Automation Engineer RAG Systems",
+      "LLM Pipelines Full Stack"
+    ],
+    "objective": "AI & Automation Engineer with 2+ years building production-grade RAG systems, LLM-powered chatbots, and scalable workflow automation. Specialized in Next.js, Python, Node.js, n8n, and vector databases to automate customer support, lead generation, and SaaS operations with 70%+ efficiency gains. Experienced shipping AI products used by thousands of users across e-commerce, SaaS, and B2B platforms."
+  },
+  "blogs": [
+    {
+      "id": "rag-pipeline-hallucinating",
+      "title": "Why Your RAG Pipeline is Hallucinating (And How to Fix It)",
+      "excerpt": "It's not the model, it's your chunks. A deep dive into semantic splitting and hybrid search.",
+      "content": "Retrieval-Augmented Generation (RAG) is transforming how we interact with data, but it's not without its pitfalls. \n\n### The Problem with Chunks\n\nMost RAG pipelines fail because they naively chunk text. Fixed-size chunking often splits context in half, leading to retrieved context that misses the point.\n\n### The Solution: Semantic Splitting\n\nBy using embedding similarities to determine break points, we can keep semantically related text together. This drastically improves retrieval quality.\n\n### Hybrid Search\n\nDon't rely solely on vector search. Keyword search (BM25) is surprisingly effective for specific terms (like product SKUs or proper nouns). Combining both (Hybrid Search) is the gold standard.",
+      "date": "Feb 10, 2026",
+      "readTime": "5 min",
+      "tags": ["AI", "RAG", "Engineering"],
+      "image": "/minisport-rag.png"
+    },
+    {
+      "id": "automating-job-n8n",
+      "title": "Automating My Entire Job with n8n",
+      "excerpt": "I built a workflow that checks emails, scrapes leads, and even orders my coffee. Here's the blueprint.",
+      "content": "Automation isn't just about saving time; it's about eliminating mental load. \n\n### The Stack\n\nI used n8n (self-hosted) as the orchestrator. It connects Gmail, Slack, and our CRM via Webhooks.\n\n### The Workflow\n\n1. **Email Parsing**: Every inbound lead email is parsed by GPT-4 via an API call.\n2. **Qualification**: The AI scores the lead based on budget and timeline.\n3. **Action**: High-score leads get a drafted reply and a Slack notification. Low-score leads get tagged for later review.\n\nThis system alone saves me 15 hours a week.",
+      "date": "Jan 24, 2026",
+      "readTime": "8 min",
+      "tags": ["Automation", "n8n", "Lifestyle"],
+      "image": "/leads.png"
+    },
+     {
+      "id": "nextjs-15-review",
+      "title": "Next.js 15: The Good, The Bad, and The Server Actions",
+      "excerpt": "My honest review after shipping 3 production apps with the latest Next.js release.",
+      "content": "Next.js 15 brings stability to the app router, but it's not all sunshine and rainbows. \n\n### Server Actions\n\nFinally, they feel stable. Form handling without API routes is a game changer for DX (Developer Experience).\n\n### Caching Gehenna\n\nThe caching strategy is still... aggressive. You need to really understand `revalidatePath` and `revalidateTag` or you'll serve stale data forever.\n\n### Conclusion\n\nUpgrade for the stability, stay for the Server Components.",
+      "date": "Dec 12, 2025",
+      "readTime": "6 min",
+      "tags": ["Next.js", "React", "Web Dev"],
+      "image": "/postily.png"
+    }
+  ],
+  "skills": {
+    "programming_languages": "JavaScript, TypeScript, Python, Java, SQL",
+    "ai_and_machine_learning": "LLMS (GPT-4, Claude, Gemini), RAG Systems, LangChain, Vector Databases, Open Source Models",
+    "frontend": "React.js, Next.js, Tailwind CSS, Shaden-UI, Material-UI, Responsive Design",
+    "backend": "Node.js, Express.js, Nest.js, Spring Boot, RESTful APIs",
+    "automation_and_integration": "n8n, Zapier, API Integration, Webhooks, Web Scraping, RPA, Firecrawl, Chatwoot",
+    "databases": "MongoDB, PostgreSQL, MySQL, Supabase, Vector DB",
+    "cloud_and_devops": "Docker, Git, GitHub Actions, CI/CD, Vercel"
+  },
+  "experience": [
+    {
+      "role": "AI Automation Engineer",
+      "company": "Lean Orchester",
+      "logo": "/lean.png",
+      "period": "Nov 2025 – Present",
+      "location": "Remote",
+      "responsibilities": [
+        "Built production RAG pipeline for Minisport.hk with automated document ingestion, embedding generation, and conversational retrieval, reducing support queries by 60%.",
+        "Engineered enterprise chatbot for Iprint handling 500+ daily queries with integrated Stripe payments, automated scheduling, and FAQ resolution via Chatwoot, improving response time by 45%.",
+        "Converted chatbot into Voice AI Agent using ElevenLabs, enabling natural language voice interactions for expanded accessibility.",
+        "Created RAG-powered support system for Bookielink by scraping LiveChat data, embedding 5K+ Q&A pairs in vector database, achieving 85% accuracy and reducing tickets by 70%.",
+        "Built lead enrichment automation using Apollo API, LLMs, and web scraping to collect company data and decision makers for sales pipeline generation.",
+        "Developed AI-powered scraping systems for Upwork, GitHub, and Indeed to generate company profiles and match candidates to jobs, syncing to CRMs and reducing screening time by 80%.",
+        "Automated ServiceM8 reporting pipeline extracting jobs, technician KPIs, and revenue metrics, saving 15 hours/week of manual work.",
+        "Built browser automation for FindMyEmail to upload CSVs, trigger enrichment jobs, and collect results automatically.",
+        "Created scalable video generation pipelines with AI narration and automated captioning, producing 100+ videos/month from GitHub repos and reaction content.",
+        "Built Convert Kit-Twilio SMS campaign system with Next.js dashboard delivering messages to 10K+ subscribers with 98% deliverability.",
+        "Designed business intelligence dashboard for OlalaHomes displaying daily reports, KPIs, and operational metrics with real-time updates."
+      ]
+    },
+    {
+      "role": "Full Stack Developer Intern",
+      "company": "Aziin Engineering Solutions",
+      "logo": "/aziin.jpg",
+      "period": "Feb 2024 – May 2024",
+      "location": "Hybrid, Sfax, Tunisia",
+      "responsibilities": [
+        "Architected e-learning SaaS platform serving 1,000+ users with live video (Agora), real-time chat, and AI adaptive learning, boosting engagement by 35%.",
+        "Implemented JWT/OAuth2 authentication with RBAC ensuring SOC-2 compliance and integrated Stripe processing $50K+ monthly transactions.",
+        "Developed AI exam generator using GPT-4 with auto-grading, reducing instructor workload by 40% for 500+ students.",
+        "Built RAG chatbot answering 2K+ queries monthly with 80% accuracy and designed admin dashboard with analytics and KPI monitoring.",
+        "Optimized performance with Redis caching and code splitting, achieving 40% faster loads and 95+ Lighthouse score."
+      ]
+    },
+    {
+      "role": "Full Stack Developer Intern",
+      "company": "Grow Up Agency",
+      "logo": "/growup.jpg",
+      "period": "Jul 2024 – Aug 2024",
+      "location": "Remote",
+      "responsibilities": [
+        "Developed CRUD functionalities and secure authentication for healthcare management system, improving operational efficiency by 30%.",
+        "Implemented automated email/SMS notifications using Node.js, SMTP, and Twilio with real-time dashboards using Recharts."
+      ]
+    },
+    {
+      "role": "Frontend Developer Intern",
+      "company": "Novel-Ti",
+      "logo": "/novel.png",
+      "period": "Jul 2023 – Aug 2023",
+      "location": "Sfax, Tunisia",
+      "responsibilities": [
+        "Designed responsive UI for NFC-based traceability system, improving performance and reducing page load time by 20%."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Minisport RAG Pipeline",
+      "image": "/minisport-rag.png",
+      "url": "#",
+      "tech_stack": "Python, LangChain, Pinecone, OpenAI",
+      "description": "Production RAG pipeline with automated document ingestion and conversational retrieval, reducing support queries by 60%."
+    },
+    {
+      "name": "Iprint Enterprise Chatbot",
+      "image": "/iprint-chatbot.png",
+      "url": "#",
+      "tech_stack": "Node.js, Chatwoot, Stripe, OpenAI",
+      "description": "Enterprise chatbot handling 500+ daily queries with integrated payments, automated scheduling, and FAQ resolution."
+    },
+    {
+      "name": "Bookielink RAG Support",
+      "image": "/bookilink-bot.png",
+      "url": "#",
+      "tech_stack": "Vector DB, LiveChat API, LLM",
+      "description": "RAG-powered support system embedding 5K+ Q&A pairs with 85% accuracy, reducing support tickets significantly."
+    },
+    {
+      "name": "Scenewear",
+      "image": "/scenewear.png",
+      "url": "#",
+      "tech_stack": "Next.js, React, Tailwind CSS",
+      "description": "Modern e-commerce platform for fashion with immersive UI, real-time inventory management, and seamless checkout."
+    },
+    {
+      "name": "LeadFlow - B2B Lead Generation",
+      "image": "/leads.png",
+      "url": "https://leadflow.example.com",
+      "tech_stack": "n8n, Firecrawl, SerpAPI, LinkedIn",
+      "description": "Multi-source lead enrichment pipeline scraping Google Maps, extracting website data, and identifying C-level executives."
+    },
+    {
+      "name": "Postily",
+      "image": "/postily.png",
+      "url": "https://postily.example.com",
+      "tech_stack": "Next.js, MongoDB, OpenAI, Stripe",
+      "description": "AI content generation, multi-platform scheduling, and analytics dashboard supporting 5+ social platforms."
+    },
+    {
+      "name": "APIspark - No-Code API Builder",
+      "image": "/apisparkp.png",
+      "url": "https://apispark.example.com",
+      "tech_stack": "Next.js, Node.js, Prisma, PostgreSQL",
+      "description": "Visual API builder with AI-generated code, auto schema creation, and Swagger docs. Reduces development time by 70%."
+    }
+  ],
+  "education": {
+    "degree": "Bachelor of Computer Science",
+    "institution": "Higher Institute of Computer Science and Multimedia of Sfax (ISIMS)",
+    "period": "2022-2025",
+    "location": "Sfax, Tunisia"
+  },
+  "languages": [
+    "English Fluent",
+    "French Fluent",
+    "Arabic Native"
+  ]
+}

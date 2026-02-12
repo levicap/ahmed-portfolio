@@ -9,9 +9,20 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@ai-sdk/react": "^3.0.81",
+    "@reactflow/node-resizer": "^2.2.14",
+    "ai": "^6.0.79",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.34.0",
+    "gsap": "^3.14.2",
+    "lucide-react": "^0.563.0",
+    "mini-svg-data-uri": "^1.4.4",
     "next": "16.1.6",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "reactflow": "^11.11.4",
+    "recharts": "^3.7.0",
+    "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
