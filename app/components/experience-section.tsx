@@ -75,7 +75,7 @@ const ExperienceCard = ({ exp, index }: { exp: any, index: number }) => {
                     </div>
                     
                     <ul className="space-y-3">
-                        {exp.responsibilities.slice(0, 4).map((resp: string, i: number) => {
+                        {exp.responsibilities.map((resp: string, i: number) => {
                              // "Funny" / "Modern" categorization based on regex keywords
                              let type = 'feat';
                              let icon = <CheckCircle2 size={14} className="text-green-500 mt-0.5 shrink-0" />;

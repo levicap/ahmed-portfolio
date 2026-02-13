@@ -72,8 +72,8 @@
         "Developed AI-powered scraping systems for Upwork, GitHub, and Indeed to generate company profiles and match candidates to jobs, syncing to CRMs and reducing screening time by 80%.",
         "Automated ServiceM8 reporting pipeline extracting jobs, technician KPIs, and revenue metrics, saving 15 hours/week of manual work.",
         "Built browser automation for FindMyEmail to upload CSVs, trigger enrichment jobs, and collect results automatically.",
-        "Created scalable video generation pipelines with AI narration and automated captioning, producing 100+ videos/month from GitHub repos and reaction content.",
-        "Built Convert Kit-Twilio SMS campaign system with Next.js dashboard delivering messages to 10K+ subscribers with 98% deliverability.",
+        "Created scalable video generation pipelines with AI narration and automated captioning, producing 10+ videos/month from GitHub repos and reaction content.",
+        "Built ConvertKit-Twilio SMS campaign system with Next.js dashboard delivering messages to 10K+ subscribers with 98% deliverability.",
         "Designed business intelligence dashboard for OlalaHomes displaying daily reports, KPIs, and operational metrics with real-time updates."
       ]
     },
@@ -115,53 +115,124 @@
   ],
   "projects": [
     {
-      "name": "Minisport RAG Pipeline",
-      "image": "/minisport-rag.png",
-      "url": "#",
-      "tech_stack": "Python, LangChain, Pinecone, OpenAI",
-      "description": "Production RAG pipeline with automated document ingestion and conversational retrieval, reducing support queries by 60%."
+      "name": "AI Career Path Mapper",
+      "image": "/carrer.png",
+      "url": "https://ai-path-carrer-generator.vercel.app/",
+      "github": "https://github.com/levicap/ai-path-carrer-generator",
+      "tech_stack": "Next.js, Express.js, Gemini API, TailwindCSS, TypeScript",
+      "description": "User inputs their current role, experience, and target role, and AI generates a roadmap for achieving that role with focus areas and learning paths.",
+      "features": ["AI-generated career roadmaps", "Skill gap analysis", "Personalized learning paths", "Resource recommendations"],
+      "featured": true
     },
     {
-      "name": "Iprint Enterprise Chatbot",
-      "image": "/iprint-chatbot.png",
-      "url": "#",
-      "tech_stack": "Node.js, Chatwoot, Stripe, OpenAI",
-      "description": "Enterprise chatbot handling 500+ daily queries with integrated payments, automated scheduling, and FAQ resolution."
+      "name": "AI Motivation Letter Generator",
+      "image": "/motivation.png",
+      "url": "https://motivation-letter-ai.vercel.app/",
+      "github": "https://github.com/levicap/motivationletteraiapi",
+      "tech_stack": "Next.js, Express.js, Gemini API, TailwindCSS, TypeScript",
+      "description": "Generates 10 customized motivation letter templates based on user input of role, company, and position applying for.",
+      "features": ["10 unique template variations", "Customized content generation", "ATS-optimized formatting", "Export to PDF/Word"],
+      "featured": true
     },
     {
-      "name": "Bookielink RAG Support",
-      "image": "/bookilink-bot.png",
-      "url": "#",
-      "tech_stack": "Vector DB, LiveChat API, LLM",
-      "description": "RAG-powered support system embedding 5K+ Q&A pairs with 85% accuracy, reducing support tickets significantly."
-    },
-    {
-      "name": "Scenewear",
-      "image": "/scenewear.png",
-      "url": "#",
-      "tech_stack": "Next.js, React, Tailwind CSS",
-      "description": "Modern e-commerce platform for fashion with immersive UI, real-time inventory management, and seamless checkout."
-    },
-    {
-      "name": "LeadFlow - B2B Lead Generation",
-      "image": "/leads.png",
-      "url": "https://leadflow.example.com",
-      "tech_stack": "n8n, Firecrawl, SerpAPI, LinkedIn",
-      "description": "Multi-source lead enrichment pipeline scraping Google Maps, extracting website data, and identifying C-level executives."
-    },
-    {
-      "name": "Postily",
+      "name": "Postily – AI Social Media Platform",
       "image": "/postily.png",
-      "url": "https://postily.example.com",
-      "tech_stack": "Next.js, MongoDB, OpenAI, Stripe",
-      "description": "AI content generation, multi-platform scheduling, and analytics dashboard supporting 5+ social platforms."
+      "url": "",
+      "github": "https://github.com/ahmedbenyahia/postily",
+      "tech_stack": "Next.js, MongoDB, TailwindCSS, OpenAI API",
+      "description": "A platform to create, schedule, and manage social media posts powered by AI.",
+      "features": ["AI-generated captions & images", "Post scheduling", "Analytics dashboard"],
+      "featured": true
     },
     {
-      "name": "APIspark - No-Code API Builder",
+      "name": "APIspark – Drag & Drop API Builder",
       "image": "/apisparkp.png",
-      "url": "https://apispark.example.com",
-      "tech_stack": "Next.js, Node.js, Prisma, PostgreSQL",
-      "description": "Visual API builder with AI-generated code, auto schema creation, and Swagger docs. Reduces development time by 70%."
+      "url": "https://apisparkdev.vercel.app/",
+      "github": "https://github.com/levicap/apispark-saas",
+      "tech_stack": "Next.js, Node.js, Prisma, AI Code Generation",
+      "description": "Visual platform to build APIs using drag-and-drop components with AI-assisted code generation.",
+      "features": ["Auto-generated routes", "Database integration", "API documentation"],
+      "featured": true
+    },
+    {
+      "name": "scenewear",
+      "image": "/scenewear.png",
+      "url": "https://scenewear-ecommerce.vercel.app/",
+      "github": "https://github.com/levicap/scenewear-ecommerce",
+      "tech_stack": "Next.js, Spring Boot, PostgreSQL",
+      "description": "Online store for a local clothing brand with complete shopping functionality.",
+      "features": ["Product catalog", "Shopping cart", "Order management"],
+      "featured": true
+    },
+    {
+      "name": "VS Code Portfolio",
+      "image": "/vscodepor.png",
+      "url": "https://portfolio-eight-gold-99.vercel.app/",
+      "github": "https://github.com/levicap/vs-code-protfolio-",
+      "tech_stack": "Next.js, TypeScript, CSS Animations",
+      "description": "Creative developer portfolio styled as VS Code editor with interactive features.",
+      "features": ["Interactive file explorer", "Syntax highlighting", "Terminal simulation"],
+      "featured": true
+    },
+    {
+      "name": "MiniSport Internal RAG Assistant",
+      "image": "/minisport-rag.png",
+      "url": "",
+      "github": "",
+      "tech_stack": "n8n, OpenAI API, Vector Database, Webhooks",
+      "description": "An internal AI assistant that helps MiniSport team members query company documentation and internal knowledge using natural language.",
+      "features": ["Internal document search", "Context-aware answers (RAG)", "Fast knowledge retrieval", "Role-based usage"],
+      "featured": false
+    },
+    {
+      "name": "BookieLink Customer Support RAG Bot",
+      "image": "/bookilink-bot.png",
+      "url": "",
+      "github": "",
+      "tech_stack": "n8n, OpenAI API, Vector Database, Webhooks",
+      "description": "A customer support chatbot that answers user questions using historical tickets, FAQs, and support documentation.",
+      "features": ["Customer-facing AI chatbot", "RAG-based responses", "Support ticket context awareness", "Reduced manual support workload"],
+      "featured": true
+    },
+    {
+      "name": "AI Book Writing Agent",
+      "image": "/book.png",
+      "url": "",
+      "github": "",
+      "tech_stack": "n8n, OpenAI API, Prompt Orchestration",
+      "description": "An AI agent that generates structured book content based on uploaded transcripts, helping transform raw material into chapters and sections.",
+      "features": ["Transcript-based content generation", "Structured chapter output", "Consistent tone and style", "Long-form content handling"],
+      "featured": false
+    },
+    {
+      "name": "iPrint AI Voice & Chat Support Agent",
+      "image": "/iprint-chatbot.png",
+      "url": "",
+      "github": "",
+      "tech_stack": "n8n, ElevenLabs, Twilio, OpenAI API, Webhooks",
+      "description": "A human-like AI support system combining chat and voice, allowing customers to interact via phone or SMS for real-time assistance.",
+      "features": ["AI voice and chatbot support", "Real-time phone and SMS conversations", "Webhook-based tool calling", "Human-like responses"],
+      "featured": true
+    },
+    {
+      "name": "LeanOrchester Lead Acquisition System",
+      "image": "/leads.png",
+      "url": "",
+      "github": "",
+      "tech_stack": "n8n, Web Scraping, APIs, Automation Logic",
+      "description": "An automated lead generation pipeline that scrapes, enriches, qualifies, and inserts leads into a CRM-ready format.",
+      "features": ["Automated lead scraping", "Lead enrichment", "Qualification logic", "CRM-ready data output"],
+      "featured": false
+    },
+    {
+      "name": "Tonic SMS Automation System",
+      "image": "/tonic.png",
+      "url": "",
+      "github": "",
+      "tech_stack": "n8n, Twilio, Kit.com, Webhooks",
+      "description": "An SMS automation system used to send messages and campaigns to users using Kit.com and Twilio.",
+      "features": ["Automated SMS campaigns", "Event-based messaging", "Twilio integration", "Kit.com workflow automation"],
+      "featured": false
     }
   ],
   "education": {

@@ -75,9 +75,28 @@ export function ProjectsCarousel() {
                                             ))}
                                          </div>
                                          <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity delay-100">
-                                             <a href={project.url} target="_blank" className="p-2 bg-white text-black rounded-full hover:bg-neutral-200">
-                                                 <ArrowUpRight size={14} />
-                                             </a>
+                                             {project.url && (
+                                                 <a 
+                                                    href={project.url} 
+                                                    target="_blank" 
+                                                    rel="noopener noreferrer"
+                                                    onClick={(e) => e.stopPropagation()}
+                                                    className="p-2 bg-white text-black rounded-full hover:bg-neutral-200"
+                                                 >
+                                                     <ArrowUpRight size={14} />
+                                                 </a>
+                                             )}
+                                             {project.github && (
+                                                 <a 
+                                                    href={project.github} 
+                                                    target="_blank" 
+                                                    rel="noopener noreferrer"
+                                                    onClick={(e) => e.stopPropagation()}
+                                                    className="p-2 bg-neutral-800 text-white rounded-full hover:bg-neutral-700"
+                                                 >
+                                                     <Github size={14} />
+                                                 </a>
+                                             )}
                                          </div>
                                      </div>
                                      

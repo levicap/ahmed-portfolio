@@ -31,7 +31,7 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
               exit={{ scale: 0.9, opacity: 0, y: 20 }}
               onClick={(e) => e.stopPropagation()}
               layoutId={`project-${project.name}`}
-              className="bg-neutral-900 border border-neutral-800 w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-3xl shadow-2xl relative flex flex-col md:flex-row"
+              className="bg-neutral-900 border border-neutral-800 w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-3xl shadow-2xl relative"
             >
                 {/* Close Button */}
                 <button 
@@ -41,24 +41,8 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                     <X size={20} />
                 </button>
 
-                {/* Left Side: Image */}
-                <div className="w-full md:w-1/2 h-64 md:h-auto bg-neutral-950 relative overflow-hidden">
-                    {project.image ? (
-                        <img 
-                            src={project.image} 
-                            alt={project.name} 
-                            className="w-full h-full object-cover"
-                        />
-                    ) : (
-                        <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-neutral-900 to-neutral-800">
-                           <span className="text-neutral-700 font-bold text-4xl">?</span>
-                        </div>
-                    )}
-                    <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-transparent to-transparent md:bg-gradient-to-r" />
-                </div>
-
-                {/* Right Side: Content */}
-                <div className="w-full md:w-1/2 p-8 flex flex-col">
+                {/* Content */}
+                <div className="w-full p-8 flex flex-col">
                     <div className="mb-6">
                         <h2 className="text-3xl font-bold text-white mb-2">{project.name}</h2>
                         <div className="flex flex-wrap gap-2 mb-4">
@@ -74,28 +58,23 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                     </div>
 
                     
-                    {/* Additional Details (Fake or extended if available in JSON) */}
-                    <div className="space-y-4 mb-8 flex-1">
-                        <h4 className="text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2">
-                             <Layers size={14} className="text-sky-500" />
-                             Key Features
-                        </h4>
-                        <ul className="space-y-2 text-sm text-neutral-400">
-                             {/* Generically generating features if not in JSON, or just using description chunks */}
-                             <li className="flex items-start gap-2">
-                                <span className="bg-neutral-800 p-1 rounded-full mt-0.5 w-1.5 h-1.5 shrink-0" />
-                                <span>Real-time data processing and synchronization.</span>
-                             </li>
-                             <li className="flex items-start gap-2">
-                                <span className="bg-neutral-800 p-1 rounded-full mt-0.5 w-1.5 h-1.5 shrink-0" />
-                                <span>Scalable architecture designed for high throughput.</span>
-                             </li>
-                             <li className="flex items-start gap-2">
-                                <span className="bg-neutral-800 p-1 rounded-full mt-0.5 w-1.5 h-1.5 shrink-0" />
-                                <span>Intuitive user interface with accessibility focus.</span>
-                             </li>
-                        </ul>
-                    </div>
+                    {/* Additional Details */}
+                    {project.features && project.features.length > 0 && (
+                        <div className="space-y-4 mb-8 flex-1">
+                            <h4 className="text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2">
+                                 <Layers size={14} className="text-sky-500" />
+                                 Key Features
+                            </h4>
+                            <ul className="space-y-2 text-sm text-neutral-400">
+                                 {project.features.map((feature: string, index: number) => (
+                                     <li key={index} className="flex items-start gap-2">
+                                        <span className="bg-neutral-800 p-1 rounded-full mt-0.5 w-1.5 h-1.5 shrink-0" />
+                                        <span>{feature}</span>
+                                     </li>
+                                 ))}
+                            </ul>
+                        </div>
+                    )}
 
                     {/* Actions */}
                     <div className="mt-auto flex gap-4 pt-6 border-t border-neutral-800">
@@ -103,19 +82,30 @@ export function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
                              <a 
                                 href={project.url} 
                                 target="_blank" 
+                                rel="noopener noreferrer"
                                 className="flex-1 px-4 py-3 bg-white text-black rounded-xl font-bold text-sm hover:bg-neutral-200 transition-colors flex items-center justify-center gap-2"
                              >
                                 <Globe size={16} />
                                 View Live
                              </a>
                         )}
-                        <a 
-                            href="#" 
-                            className="flex-1 px-4 py-3 bg-neutral-800 text-white rounded-xl font-bold text-sm hover:bg-neutral-700 transition-colors flex items-center justify-center gap-2"
-                        >
-                            <Github size={16} />
-                            Source Code
-                        </a>
+                        {project.github && (
+                            <a 
+                                href={project.github} 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="flex-1 px-4 py-3 bg-neutral-800 text-white rounded-xl font-bold text-sm hover:bg-neutral-700 transition-colors flex items-center justify-center gap-2"
+                            >
+                                <Github size={16} />
+                                Source Code
+                            </a>
+                        )}
+                        {!project.url && !project.github && (
+                            <div className="flex-1 px-4 py-3 bg-neutral-800/50 text-neutral-500 rounded-xl font-bold text-sm flex items-center justify-center gap-2 cursor-not-allowed">
+                                <Github size={16} />
+                                Private Project
+                            </div>
+                        )}
                     </div>
                 </div>
             </motion.div>
